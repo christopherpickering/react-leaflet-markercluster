@@ -1,6 +1,6 @@
 {
   "name": "@christopherpickering/react-leaflet-markercluster",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React wrapper of Leaflet.markercluster for react-laeflet",
   "main": "dist/index.js",
   "repository": "https://github.com/christopherpickering/react-leaflet-markercluster.git",
@@ -51,7 +51,7 @@
     "@storybook/react-webpack5": "^7.0.0-alpha.0",
     "@storybook/testing-library": "^0.0.13",
     "autoprefixer": "^10.4.13",
-    "babel-loader": "^8.1.0",
+    "babel-loader": "^9.0.0",
     "css-loader": "^3.6.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.28.0",
