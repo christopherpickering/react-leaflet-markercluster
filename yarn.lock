@@ -6202,7 +6202,7 @@ css-loader@^5.0.1:
     schema-utils "^3.0.0"
     semver "^7.3.5"
 
-css-loader@^6.7.1:
+css-loader@^6.0.0, css-loader@^6.7.1:
   version "6.7.2"
   resolved "https://registry.npmjs.org/css-loader/-/css-loader-6.7.2.tgz"
   integrity sha512-oqGbbVcBJkm8QwmnNzrFrWTnudnRZC+1eXikLJl0n4ljcfotgRifpg2a1lKy8jTrc4/d9A/ap1GFq1jDKG7J+Q==
