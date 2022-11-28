@@ -1,0 +1,38 @@
+name: Release
+
+on:
+  push:
+    branches-ignore: [dev]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+
+      - run: npm i -g yarn
+      - run: yarn install
+      - run: yarn build:source
+
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v3
+
+        id: semantic
+        with:
+          semantic_version: 18
+          extra_plugins: |
+            @semantic-release/changelog@6
+            @semantic-release/git@10
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_PAT }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

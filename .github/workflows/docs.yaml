@@ -1,0 +1,27 @@
+name: Docs
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+
+      - run: npm i -g yarn
+      - run: yarn install
+      - run: yarn build:source
+      - run: yarn build-storybook
+
+      - name: docs
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./storybook-static
