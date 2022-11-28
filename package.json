@@ -1,6 +1,6 @@
 {
   "name": "@christopherpickering/react-leaflet-markercluster",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "React wrapper of Leaflet.markercluster for react-laeflet",
   "main": "dist/index.js",
   "repository": "https://github.com/christopherpickering/react-leaflet-markercluster.git",
