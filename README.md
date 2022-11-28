@@ -1,24 +1,28 @@
-# React Leaflet Markercluster
+<h1 align=center>React Leaflet Markercluster</h1>
+<h4 align=center>
+React wrapper of <a href="https://github.com/Leaflet/Leaflet.markercluster">Leaflet.markercluster</a> for <a href="https://github.com/PaulLeCam/react-leaflet">react-leaflet</a>
+</h4>
+<p>
+Yet another <code>react-leaflet-markercluster</code> npm package. Why, there are already a dozen? I could not find one that worked with the latest version of <code>react-leaflet</code> and also seemed to support maintenance. I'm not a node developer but created this so that others could use an updated version and also maintain it. PR's are welcome. The fork-chain here is about a mile long so I've broken out of it, but listed the original developers below.
+</p>
 
-Yet another `react-leaflet-markercluster` npm package. Why, there are already a dozen? I could not find one that worked with the latest version of `react-leaflet` and also seemed to support maintenance. I'm not a node developer but created this so that others could use an updated version and also maintain it. PR's are welcome. The fork-chain here is about a mile long so I've broken out of it, but listed the original developers below.
+<p align=center>
+<a href="https://www.npmjs.com/package/@christopherpickering/react-leaflet-markercluster"><img src="https://img.shields.io/npm/v/@christopherpickering%2freact-leaflet-markercluster.svg" alt="npm version" /></a>
+<a href="https://www.npmjs.com/package/@christopherpickering/react-leaflet-markercluster"><img src="https://img.shields.io/npm/dm/@christopherpickering%2freact-leaflet-markercluster.svg" alt="npm downloads" /></a>
+<a href="#license"><img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license" /></a>
+</p>
 
-[![npm](https://img.shields.io/npm/v/@christopherpickering/react-leaflet-markercluster.svg)](https://www.npmjs.com/package/react-leaflet-markercluster)
-[![Code Climate](https://codeclimate.com/github/YUzhva/react-leaflet-markercluster/badges/gpa.svg)](https://codeclimate.com/github/YUzhva/react-leaflet-markercluster)
-[![npm](https://img.shields.io/npm/dm/react-leaflet-markercluster.svg)](https://www.npmjs.com/package/react-leaflet-markercluster)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=plastic)](#license)
+<img align="center" src="./preview.png">
 
-React wrapper of [Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster)
-for [react-leaflet](https://github.com/PaulLeCam/react-leaflet)
+<p align=center><strong>
+<a href="https://christopherpickering.github.io/react-leaflet-markercluster">Documentation</a> - <a href="https://codesandbox.io/s/react-leaflet-markercluster-4lrkii">Example</a>
+</strong></p>
 
-![React leaflet markercluster](./preview.png)
-
-**Examples with the Documentation:** https://yuzhva.github.io/react-leaflet-markercluster/ <br />
 **[CodeSandbox Getting Started](https://codesandbox.io/s/react-leaflet-markercluster-getting-started-9binx)**
 
 # Description
 
-If you are faced with an issue with markers overlapping during map zooming, or they are
-overlapping because they are close to each other - you probably need to group them. <br />
+If you are faced with an issue with markers overlapping during map zooming, or they are overlapping because they are close to each other - you probably need to group them. <br />
 That is what you can do with **react-leaflet-markercluster**.
 
 Just grab your markers inside `<MarkerClusterGroup />` component, right after `<TileLayer />`:
@@ -49,25 +53,13 @@ import MarkerClusterGroup from 'react-leaflet-markercluster';
 
 # Getting started
 
-**1.** Install package:
+1. Install packages:
 
 ```bash
-yarn add react-leaflet-markercluster@next # yarn
-npm install react-leaflet-markercluster # npm
+npm install react-leaflet-markercluster leaflet react-leaflet leaflet.markercluster
 ```
 
-**NOTE:** the `@next` is required for **react-leaflet v3** support. If you are still using react-leaflet v3, add dependency as `react-leaflet-markercluster@^2.x.x`
-
-The `react-leaflet-markercluster` requires `leaflet.markercluster` as [`peerDependency`](https://docs.npmjs.com/files/package.json#peerdependencies)
-
-(Leaflet and react-leaflet also should be installed)
-
-```bash
-yarn add leaflet.markercluster leaflet react-leaflet # yarn
-npm install leaflet.markercluster leaflet react-leaflet # npm
-```
-
-**2.** Import **markercluster** and **leaflet** styles:
+2. Import **markercluster** and **leaflet** styles:
 
 ```javascript
 @import '~leaflet/dist/leaflet.css'; // sass
@@ -84,11 +76,11 @@ Or include CSS styles directly to the head of HTML file:
 
 <link
   rel="stylesheet"
-  href="https://unpkg.com/react-leaflet-markercluster/dist/styles.min.css"
+  href="https://unpkg.com/@christopherpickering/react-leaflet-markercluster/dist/styles.min.css"
 />
 ```
 
-**3.** Write some simple `react-leaflet` Map:
+3. Write some simple `react-leaflet` Map:
 
 ```javascript
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
@@ -110,9 +102,9 @@ import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 </MapContainer>;
 ```
 
-**NOTE:** Remember to add map styles `.markercluster-map { height: 90vh; }`.
+    **NOTE:** Remember to add map styles `.markercluster-map { height: 90vh; }`.
 
-**4.** Just grab your markers inside `<MarkerClusterGroup />` component, right after `<TileLayer />`:
+4. Just grab your markers inside `<MarkerClusterGroup />` component, right after `<TileLayer />`:
 
 ```javascript
 import MarkerClusterGroup from 'react-leaflet-markercluster';
@@ -124,8 +116,8 @@ import MarkerClusterGroup from 'react-leaflet-markercluster';
 </MarkerClusterGroup>;
 ```
 
-[More examples with the Documentation](https://yuzhva.github.io/react-leaflet-markercluster/) <br />
-[CodeSandbox Getting Started](https://codesandbox.io/s/react-leaflet-markercluster-getting-started-9binx)
+[More examples with the Documentation](https://christopherpickering.github.io/react-leaflet-markercluster/) <br />
+[CodeSandbox Getting Started](https://codesandbox.io/s/react-leaflet-markercluster-4lrkii)
 
 # API
 
@@ -151,39 +143,13 @@ const createClusterCustomIcon = function (cluster) {
 <MarkerClusterGroup iconCreateFunction={createClusterCustomIcon} />
 ```
 
-P.S: Examples for v1 are available at [CHANGELOG.md](./CHANGELOG.md#v118)
-
 ### Event listeners
 
 You are able to add any listener, supported by Leaflet, with simple `on` property prefix.
 
-# How to run DEV env
+# How to run the Storybook
 
-**1.** Clone the repo:
-
-```bash
-git clone https://github.com/christopherpickering/react-leaflet-markercluster.git
-```
-
-**2.** Install all dependencies:
-
-```bash
-yarn install --no-lockfile # yarn
-npm install # npm
-```
-
-**3.** Start the server:
-
-```bash
-yarn dev # yarn
-npm run dev # npm
-```
-
-**4.** After starting the server, storybook should automatically open the following address:
-
-```
-http://localhost:8080/
-```
+Run `yarn storybook` and storybook should automatically open the at `http://localhost:6006/`.
 
 # Contributors ✨
 
@@ -213,21 +179,21 @@ UMD builds are available on [unpkg](https://unpkg.com/):
 
 ```html
 <!-- unpkg, production code (minified) -->
-<script src="https://unpkg.com/react-leaflet-markercluster/dist/index.js"></script>
+<script src="https://unpkg.com/@christopherpickering%2freact-leaflet-markercluster/dist/index.js"></script>
 <!-- unpkg, development code -->
-<script src="https://unpkg.com/react-leaflet-markercluster/src/react-leaflet-markercluster.js"></script>
+<script src="https://unpkg.com/@christopherpickering%2freact-leaflet-markercluster/src/react-leaflet-markercluster.js"></script>
 
 <!-- unpkg, production styles (minified) -->
 <link
   rel="stylesheet"
   type="text/css"
-  href="https://unpkg.com/react-leaflet-markercluster/dist/styles.min.css"
+  href="https://unpkg.com/@christopherpickering%2freact-leaflet-markercluster/dist/styles.min.css"
 />
 <!-- unpkg, development styles -->
 <link
   rel="stylesheet"
   type="text/css"
-  href="https://unpkg.com/react-leaflet-markercluster/src/styles.scss"
+  href="https://unpkg.com/@christopherpickering%2freact-leaflet-markercluster/src/styles.scss"
 />
 ```
 
