@@ -18,8 +18,6 @@ Yet another <code>react-leaflet-markercluster</code> npm package. Why, there are
 <a href="https://christopherpickering.github.io/react-leaflet-markercluster">Documentation</a> - <a href="https://codesandbox.io/s/react-leaflet-markercluster-4lrkii">Example</a>
 </strong></p>
 
-**[CodeSandbox Getting Started](https://codesandbox.io/s/react-leaflet-markercluster-getting-started-9binx)**
-
 # Description
 
 If you are faced with an issue with markers overlapping during map zooming, or they are overlapping because they are close to each other - you probably need to group them. <br />
@@ -28,7 +26,7 @@ That is what you can do with **react-leaflet-markercluster**.
 Just grab your markers inside `<MarkerClusterGroup />` component, right after `<TileLayer />`:
 
 ```javascript
-import MarkerClusterGroup from 'react-leaflet-markercluster';
+import MarkerClusterGroup from '@christopherpickering/react-leaflet-markercluster';
 
 <MarkerClusterGroup>
   <Marker position={[49.8397, 24.0297]} />
@@ -56,17 +54,17 @@ import MarkerClusterGroup from 'react-leaflet-markercluster';
 1. Install packages:
 
 ```bash
-npm install react-leaflet-markercluster leaflet react-leaflet leaflet.markercluster
+npm install @christopherpickering/react-leaflet-markercluster leaflet react-leaflet leaflet.markercluster
 ```
 
 2. Import **markercluster** and **leaflet** styles:
 
 ```javascript
 @import '~leaflet/dist/leaflet.css'; // sass
-@import '~react-leaflet-markercluster/dist/styles.min.css'; // sass
+@import '~@christopherpickering/react-leaflet-markercluster/dist/styles.min.css'; // sass
 
 require('~leaflet/dist/leaflet.css'); // inside .js file
-require('react-leaflet-markercluster/dist/styles.min.css'); // inside .js file
+require('@christopherpickering/react-leaflet-markercluster/dist/styles.min.css'); // inside .js file
 ```
 
 Or include CSS styles directly to the head of HTML file:
@@ -107,7 +105,7 @@ import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 4. Just grab your markers inside `<MarkerClusterGroup />` component, right after `<TileLayer />`:
 
 ```javascript
-import MarkerClusterGroup from 'react-leaflet-markercluster';
+import MarkerClusterGroup from '@christopherpickering/react-leaflet-markercluster';
 
 <MarkerClusterGroup>
   <Marker position={[49.8397, 24.0297]} />
