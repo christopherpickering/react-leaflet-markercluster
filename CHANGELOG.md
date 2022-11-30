@@ -1,9 +1,8 @@
 # 1.0.0 (2022-11-28)
 
-
 ### Features
 
-* **npm:** release for npm package. Updated docs as well ([77cf652](https://github.com/christopherpickering/react-leaflet-markercluster/commit/77cf652edbd6fd14ff6269a8cc00dcf7a97d0b45))
+- **npm:** release for npm package. Updated docs as well ([77cf652](https://github.com/christopherpickering/react-leaflet-markercluster/commit/77cf652edbd6fd14ff6269a8cc00dcf7a97d0b45))
 
 # Original Changelog
 
