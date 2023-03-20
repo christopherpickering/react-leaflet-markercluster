@@ -1,9 +1,8 @@
 # [1.1.0](https://github.com/christopherpickering/react-leaflet-markercluster/compare/v1.0.0...v1.1.0) (2022-11-30)
 
-
 ### Features
 
-* **docs:** updated readme ([089d69d](https://github.com/christopherpickering/react-leaflet-markercluster/commit/089d69dbe1cc03e0c1a8ddd8e758dc6d5ee91ebd))
+- **docs:** updated readme ([089d69d](https://github.com/christopherpickering/react-leaflet-markercluster/commit/089d69dbe1cc03e0c1a8ddd8e758dc6d5ee91ebd))
 
 # 1.0.0 (2022-11-28)
 
