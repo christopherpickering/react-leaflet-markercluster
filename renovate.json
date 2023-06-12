@@ -10,7 +10,7 @@
     "npm:unpublishSafe"
   ],
   "bumpVersion": "patch",
-  "commitMessagePrefix": "chore(deps)",
+  "commitMessagePrefix": "fix(deps)",
   "labels": ["maintenance", "renovate"],
   "baseBranches": ["dev"],
   "packageRules": [
