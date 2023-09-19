@@ -3,12 +3,9 @@ import React from 'react';
 import L from 'leaflet';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 
-import MarkerClusterGroup from './../../src/react-leaflet-markercluster';
+import MarkerClusterGroup from './../../../src/react-leaflet-markercluster';
 
 import { MAP_ZOOM, MAP_MAX_ZOOM, MAP_CENTER_COORDINATES } from './constants';
-
-import '../../dist/styles.min.css';
-import './styles.css';
 
 // Function for creating custom icon for cluster group
 // https://github.com/Leaflet/Leaflet.markercluster#customising-the-clustered-markers

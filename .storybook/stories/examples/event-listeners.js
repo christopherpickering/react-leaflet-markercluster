@@ -2,13 +2,10 @@ import React from 'react';
 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
-import MarkerClusterGroup from './../../src/react-leaflet-markercluster';
+import MarkerClusterGroup from './../../../src/react-leaflet-markercluster';
 
 import { logAction } from './helpers';
 import { MAP_ZOOM, MAP_MAX_ZOOM, MAP_CENTER_COORDINATES } from './constants';
-
-import '../../dist/styles.min.css';
-import './styles.css';
 
 const EventListeners = () => (
   <MapContainer

@@ -1,4 +1,4 @@
-import { Meta, Story, Canvas } from '@storybook/addon-docs';
+import { Meta, Story } from "@storybook/blocks";
 
 import {
   BasicExample,
@@ -9,7 +9,7 @@ import {
   MarkerTooltip,
 } from './examples';
 
-<Meta title="React Leaflet MarkerCluster" />
+<Meta title="Documentation" />
 
 # Basic example
 
@@ -41,10 +41,9 @@ import MarkerClusterGroup from 'react-leaflet-markercluster';
 
 If you would like to pass some props to the Marker, please use [react-leaflet Marker component API](https://react-leaflet.js.org/docs/en/components.html#marker).
 
-<Story name="Basic example">{BasicExample}</Story>
+<BasicExample />
 
 [GitHub source code](https://github.com/christopherpickering/react-leaflet-markercluster/blob/master/.storybook/examples/basic.js)
-
 ---
 
 # Event listeners
@@ -100,7 +99,7 @@ import MarkerClusterGroup from 'react-leaflet-markercluster';
 </MapContainer>;
  ```
 
-<Story name="Event listeners">{EventListeners}</Story>
+<EventListeners />
 
 [GitHub source code](https://github.com/christopherpickering/react-leaflet-markercluster/blob/master/.storybook/examples/event-listeners.js)
 
@@ -173,7 +172,7 @@ And do not forget about styles for your class:
 
 If you would like to pass some props to the Cluster, please check [List of all Leaflet.markercluster options](https://github.com/Leaflet/Leaflet.markercluster#all-options)
 
-<Story name="Cluster custom icon">{MarkerClusterOptions}</Story>
+<MarkerClusterOptions />
 
 
 [GitHub source code](https://github.com/christopherpickering/react-leaflet-markercluster/blob/master/.storybook/examples/marker-cluster-options.js)
@@ -231,7 +230,7 @@ const redMarker = L.icon({
 
 If you would like to pass some props to the Cluster, please check [List of all Leaflet Marker options](http://leafletjs.com/reference.html#marker-option)
 
-<Story name="Marker icon and title">{MarkerOptions}</Story>
+<MarkerOptions />
 
 [GitHub source code](https://github.com/christopherpickering/react-leaflet-markercluster/blob/master/.storybook/examples/marker-options.js)
 
@@ -298,7 +297,7 @@ const redMarker = L.icon({
 
 If you would like to pass some props to the Cluster, please check [List of all Leaflet Popup options](http://leafletjs.com/reference.html#popup-option)
 
-<Story name="Marker popup">{MarkerPopup}</Story>
+<MarkerPopup />
 
 [GitHub source code](https://github.com/christopherpickering/react-leaflet-markercluster/blob/master/.storybook/examples/marker-popup.js)
 
@@ -352,6 +351,6 @@ import MarkerClusterGroup from 'react-leaflet-markercluster';
 
 If you would like to pass some props to the Cluster, please check [List of all Leaflet Tooltip options](http://leafletjs.com/reference.html#tooltip-option)
 
-<Story name="Marker tooltip">{MarkerTooltip}</Story>
+<MarkerTooltip />
 
 [GitHub source code](https://github.com/christopherpickering/react-leaflet-markercluster/blob/master/.storybook/examples/marker-tooltip.js)
