@@ -2,12 +2,9 @@ import React from 'react';
 
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 
-import MarkerClusterGroup from './../../src/react-leaflet-markercluster';
+import MarkerClusterGroup from './../../../src/react-leaflet-markercluster';
 
 import { MAP_ZOOM, MAP_MAX_ZOOM, MAP_CENTER_COORDINATES } from './constants';
-
-import '../../dist/styles.min.css';
-import './styles.css';
 
 const BasicExample = () => (
   <MapContainer

@@ -6,6 +6,7 @@
   "extends": [
     "plugin:react/recommended",
     "airbnb",
+    "plugin:storybook/recommended",
     "plugin:storybook/recommended"
   ],
   "globals": {

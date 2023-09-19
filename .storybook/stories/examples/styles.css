@@ -1,11 +1,5 @@
-/*@imoprt '../../node_modules/leaflet/dist/leaflet.css';
-@import '../../src/styles.scss';
-
-$puple: #9370db;
-$gray: #ededed;
-*/
 .markercluster-map {
-  height: 90vh;
+  height: 400px;
 }
 
 /* Customize the Clustered Markers */

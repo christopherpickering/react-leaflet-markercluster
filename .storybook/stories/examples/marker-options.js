@@ -3,13 +3,10 @@ import React from 'react';
 import L from 'leaflet';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 
-import MarkerClusterGroup from './../../src/react-leaflet-markercluster';
+import MarkerClusterGroup from './../../../src/react-leaflet-markercluster';
 
 import redFilledMarker from './icons/red-filled-marker.svg';
 import { MAP_ZOOM, MAP_MAX_ZOOM, MAP_CENTER_COORDINATES } from './constants';
-
-import '../../dist/styles.min.css';
-import './styles.css';
 
 // Create marker icon according to the official leaflet documentation
 const redMarker = L.icon({
