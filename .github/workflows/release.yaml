@@ -29,7 +29,7 @@ jobs:
 
         id: semantic
         with:
-          semantic_version: 18
+          semantic_version: 23
           extra_plugins: |
             @semantic-release/changelog@6
             @semantic-release/git@10
